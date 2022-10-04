@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
 :root{
     --cor1:#5a2f1d;
     --cor2:#f9e7c1;
@@ -5,6 +6,7 @@
     --cor4:#8f4c2d;
     --cor5: #9e725f;
     --cor6:#c57552;
+    --fontetitle: 'Noto Sans Mono', monospace;
 }
 *{
     padding: 0px;
@@ -93,4 +95,7 @@ img{
     max-width: 500px;
     height: auto;
     width: auto;
+}
+h2{
+    font-family: var(--fontetitle);
 }
