@@ -1,0 +1,184 @@
+:root{
+    --cor1:#5a2f1d;
+    --cor2:#f9e7c1;
+    --cor3: #dd8e6d;
+    --cor4:#8f4c2d;
+    --cor5: #9e725f;
+    --cor6:#c57552;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#title{
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+#impacto{
+    width: 300px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.x{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+header{
+    padding: 10px;
+    background-color: var(--cor6);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor2);
+}
+header ul{
+    width: 500px;
+    justify-content: space-evenly;
+    display: flex;
+    list-style-type: none;
+}
+.menu ul{
+    position: absolute;
+}
+.menu li ul{
+    position: absolute; /*ao pai*/
+    display: none;
+    line-height: 37.5px;
+    margin-left: -6px;
+    height: 75px;
+    width: 136px;
+    text-align: center;
+    background-color: var(--cor3);
+}
+.menu > li{
+    padding: 6px;
+    margin: 8px;
+    text-align: center;
+}
+.menu > li:hover{
+    background-color: var(--cor3);
+}
+.menu ul li:hover a{
+    color: var(--cor1);
+}
+.menu li:hover ul, .menu li.over ul{
+    display: block;
+}
+.menu a{
+    color: var(--cor2);
+    text-decoration: none;
+    font-weight: bold;
+}
+header button{
+    background-color: var(--cor2);
+    color: var(--cor6);
+    height: 30px;
+    width: 180px;
+    border: 0px;
+    padding: 2px;
+}
+main button{
+    background-color: var(--cor6);
+    color: var(--cor2);
+    border-radius: 10px;
+    height: 30px;
+    width: 120px;
+    border: 0px;
+    padding: 2px;
+}
+#capa{
+    border: 15px solid var(--cor4);
+    max-height: 440px;
+    height: auto;
+    width: auto;
+}
+body{
+    background-color: var(--cor2);
+}
+.resumo{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 600px;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    animation: position 16s infinite;
+}
+#frase{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes position {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    51%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.personagens{
+    top: 140px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    animation: position 16s infinite 8s;
+}
+#pers{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: var(--cor4);
+    font-weight: bolder;
+}
+h2{
+    color: var(--cor4);
+    font-weight: bolder;
+}
+.p{
+    border: 10px solid var(--cor4);
+    max-height: 190px;
+    height: auto;
+    width: auto;
+    transition: transform 0.2s;
+}
+main button{
+    transition: transform 0.2s;
+}
+.p:hover{
+    transform: scale(1.2);
+}
+button:hover{
+    transform: scale(1.05);
+}
+
+body::-webkit-scrollbar {
+    width: 11px;               /* width of the entire scrollbar */
+  }
+body::-webkit-scrollbar-track {
+    background: var(--cor2);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--cor4);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+.nome{
+    letter-spacing: 2px;
+    color: var(--cor4);
+}

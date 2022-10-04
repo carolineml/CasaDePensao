@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Pensão</title>
+    <link rel ="stylesheet" href="estilo_tutorial.css">
+    <link rel="shortcut icon" href="../recursos/casadepensao.jpg" >
+</head>
+<body>
+    <header>
+        <h1 id="title">CASA DE PENSÃO</h1>
+        <nav>
+            <ul class="menu">
+                <li><a  class="x" href="../index.html">HOME</a></li>
+                <li><a  class="x" href="../criadores/criadores.html">CRIADORES</a></li>
+                <li><a class="x" href="../utfpr/utfpr.html">SOBRE A UTFPR</a></li>
+                <li><a class="x" href="../info_livro/info_livro.html">SOBRE O LIVRO</a>
+                    <ul>
+                        <li><a href="../personagens/personagens.html">Personagens</a></li>
+                        <li><a href="../resumo/resumo.html">Resumo</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>
+            Tutorial Media Query
+        </h2>
+        <br/>
+        <p>Em designs responsivos, a utilização de media queries são essenciais para um desenvolvimento web com layout adaptável para os diferentes tipos de dispositivos presentes na tecnologia atual. </p>
+        <br/>
+        <img src="../recursos/mediaquery.jpg">
+        <br/>
+        <p>
+            <strong>A estrutura básica de media query no CSS é a seguinte:</strong>
+            <br/>
+            <br/>
+            <code>
+                <pre>@media /*tipo de mídia*/ and (/*breakpoint*/){
+    /*alguma ação*/
+    }
+                </pre>    
+            </code>
+        </p>
+        <br/>
+        <h3>Tipos de mídia</h3>
+        <br/>
+        <p>
+            Na área comentada “tipo de mídia”, deve ser informado qual dispositivo o site objetiva. A nomenclatura dos tipos mais comuns são as seguintes:
+            <br/>
+            <br/>
+            <ul>
+                <li>all - inclui todos os tipos de mídia</li>
+                <li>screen - para telas em geral, podendo ser de smartphones, desktops e tablets</li>
+                <li>print - utilizado para um layout dedicado a impressoras</li>
+            </ul>
+            <br/>
+            <br/>
+            <code>
+                <pre>@media all and (/*breakpoint*/){
+    /*alguma ação*/
+    }
+                        
+                </pre>    
+            </code>
+        </p>
+        <br/>
+        <h3>Condições dentro dos parênteses (breakpoint)</h3>
+        <br/>
+        <p>
+            Os breakpoints são condições para o estabelecimento de uma mudança no layout para uma adaptação a uma nova media query. 
+        </p>
+        <br/>
+        <p>
+            Um exemplo:
+            <br/>
+            <br/>
+            <code>
+                <pre>@media all and (max-width: 600px) {
+    .classe_observada{
+    color: darkgreen;
+    }
+}
+                    
+                </pre>    
+            </code>
+        </p>
+        <br/>
+        <p>
+            Seguindo a ideia do exemplo anterior, quando a largura máxima for inferior a 600 px, a ação dada a classe será executada.
+        </p>
+        <br/>
+        <p>
+            Para facilitar o trabalho e seus objetivos, segue alguns “breakpoints padrão”:
+            <ul>
+                <li>
+                    de 320px a 480 px - dispositivos móveis
+                </li>
+                <li>de 481 px a 768px - tablets</li>
+                <li>de 769px a 1024px - telas pequenas, como laptops</li>
+                <li>de 1025px a 1200px - desktops</li>
+                <li>de 1201px acima - telas grandes, como televisões.</li>
+            </ul>
+        </p>
+        <br/>
+        <br/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/P_vkS4UJNDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/>
+        <br/>
+        <p id="fonte">
+            Fonte: EYGI, C.<strong> Media Query CSS Tutorial – Standard Resolutions, CSS Breakpoints, and Target Phone Sizes.</strong>
+            Disponível em: https://www.freecodecamp.org/portuguese/news/tutorial-de-media-queries-do-css-resolucoes-padrao-breakpoints-do-css-e-tamanhos-de-telefone/.
+            Acesso em: 4 out. 2022.
+        </p>
+
+    </main>
+</body>
+</html>
